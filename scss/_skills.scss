@@ -1,0 +1,245 @@
+@import "vars";
+
+.inner {
+  &__txt {
+    border: 1px solid #000;
+    color: #fff;
+    background-color: #000;
+    border-radius: 5px;
+  }
+}
+
+.skills {
+  margin-bottom: 60px;
+  .title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .second-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 80px;
+    color: #263238;
+  }
+  a {
+    display: inline-block;
+    border: 1px solid black;
+    text-decoration: none;
+    padding: 16px 41px;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 5px;
+    background: #263238;
+    transition: 0.5s;
+
+    &:hover {
+      background-color: #8f95a5;
+      border: none;
+    }
+  }
+
+  &__wrapper {
+    img {
+      width: 100%;
+    }
+    .bg-color {
+      background-color: #f5f5f5;
+      color: #000;
+      //width: 350px;
+      margin-top: 21px;
+      padding: 29px;
+      align-items: center;
+      border-radius: 15px;
+    }
+    &__txt {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+
+      color: #8f95a5;
+    }
+    p {
+      padding-top: 20px;
+      color: #8f95a5;
+    }
+  }
+}
+//MEDIA QUERES
+
+@media (min-width: 1024px) {
+  .skills {
+    &__wrapper {
+      img {
+        // width: 100%;
+        object-fit: cover;
+      }
+      display: grid;
+      justify-content: center;
+      gap: 13px;
+      grid-template-areas:
+        "a b c"
+        "a v v";
+
+      .bg-color {
+        background-color: #f5f5f5;
+        color: #000;
+        //padding: 40px;
+        align-items: center;
+        border-radius: 15px;
+        margin-top: 0;
+      }
+      &__listening {
+        //display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: space-between;
+
+        &__img {
+          width: 382px;
+          height: 255px;
+        }
+      }
+      &__txt {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+      }
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      p {
+        padding-top: 20px;
+        color: #8f95a5;
+      }
+    }
+    .a {
+      grid-area: a;
+    }
+    .b {
+      grid-area: b;
+    }
+    .v {
+      grid-area: v;
+    }
+    .c {
+      grid-area: c;
+    }
+  }
+}
+
+@media (min-width: 575px) {
+  .skills {
+    img {
+      width: 100%;
+    }
+    &__wrapper {
+      display: grid;
+      justify-content: center;
+      gap: 30px;
+      grid-template-areas:
+        "a b "
+        "c v";
+
+      .bg-color {
+        background-color: #f5f5f5;
+        color: #000;
+        padding: 40px;
+        align-items: center;
+        border-radius: 15px;
+      }
+      &__reading {
+        &__img {
+          padding-top: 30px;
+        }
+      }
+      &__listening {
+        &__img {
+          padding-top: 30px;
+        }
+      }
+      &__writing {
+        position: relative;
+        &__link {
+          position: absolute;
+          top: 83%;
+        }
+      }
+    }
+    .a {
+      grid-area: a;
+    }
+    .b {
+      grid-area: b;
+    }
+    .v {
+      grid-area: v;
+    }
+    .c {
+      grid-area: c;
+    }
+  }
+}
+
+@media (min-width: 750px) {
+  .skills {
+    img {
+      width: 100%;
+    }
+    &__wrapper {
+      width: 100%;
+      display: grid;
+      justify-content: center;
+      gap: 13px;
+      grid-template-areas:
+        "a b c"
+        "a v v";
+
+      .bg-color {
+        background-color: #f5f5f5;
+        color: #000;
+        padding: 40px;
+        align-items: center;
+        border-radius: 15px;
+        margin-top: 0;
+      }
+      &__listening {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+      }
+      &__txt {
+        font-family: "Poppins";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8f95a5;
+      }
+      p {
+        padding-top: 20px;
+        color: #8f95a5;
+      }
+    }
+    .a {
+      grid-area: a;
+    }
+    .b {
+      grid-area: b;
+    }
+    .v {
+      grid-area: v;
+    }
+    .c {
+      grid-area: c;
+    }
+  }
+}
