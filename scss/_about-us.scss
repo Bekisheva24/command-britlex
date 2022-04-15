@@ -1,0 +1,174 @@
+@import "vars";
+
+.about-us {
+  &__inner {
+    text-align: center;
+  }
+  &__title {
+    margin: 50px 0 24px 0;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 80px;
+    text-align: center;
+
+    color: $color-black;
+  }
+
+  &__photo {
+    margin-bottom: 23px;
+    width: 100%;
+  }
+
+  &__text {
+    margin-bottom: 37px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: center;
+
+    color: $color-accent;
+  }
+
+  &__static-num {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+
+    color: #2a3246;
+  }
+
+  &__static-name {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+
+    color: $color-accent;
+  }
+  &__line + &__line {
+    padding-top: 29px;
+  }
+}
+
+@media (min-width: 575px) {
+  .about-us {
+    &__title {
+      margin: 84px 0 23px;
+      font-size: 30px;
+      line-height: 80px;
+    }
+
+    &__photo {
+      margin-bottom: 25px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 21px;
+    }
+
+    &__static {
+      display: flex;
+      justify-content: space-around;
+    }
+    &__line + &__line {
+      padding-top: 0;
+    }
+
+    &__static-name {
+      font-size: 14px;
+    }
+  }
+}
+
+@media (min-width: 767px) {
+  .about-us {
+    &__title {
+      margin: 52px 0 0 0;
+      text-align: start;
+    }
+    &__inner {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+      // text-align: start;
+    }
+
+    &__img {
+      width: 45%;
+    }
+    &__service {
+      width: 55%;
+    }
+    &__img {
+      margin-left: 78px;
+    }
+
+    &__text {
+      text-align: start;
+    }
+
+    &__static {
+      margin-bottom: 37px;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .about-us {
+    &__title {
+      margin: 106px 0 13px 0;
+      font-size: 36px;
+      line-height: 80px;
+    }
+
+    &__text {
+      font-size: 16px;
+      line-height: 24px;
+    }
+
+    &__img {
+      margin-left: 78px;
+    }
+
+    &__img,
+    &__service {
+      width: 50%;
+    }
+
+    &__static-num {
+      font-size: 30px;
+    }
+
+    &__static-name {
+      font-size: 16px;
+    }
+  }
+}
+
+@media (min-width: 1087px) {
+  .about-us {
+    &__title {
+      margin: 282px 0 23px 0;
+      font-size: 36px;
+      line-height: 80px;
+    }
+
+    &__img {
+      margin-left: 194px;
+    }
+
+    &__text {
+      font-size: 20px;
+      line-height: 30px;
+    }
+    &__static-num {
+      font-size: 48px;
+    }
+    &__static-name {
+      font-size: 20px;
+    }
+  }
+}
