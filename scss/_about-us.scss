@@ -1,18 +1,15 @@
 @import "vars";
 
 .about-us {
+  .section-title {
+    margin: 50px 0 23px 0;
+    text-align: center;
+  }
   &__inner {
     text-align: center;
   }
   &__title {
-    margin: 50px 0 24px 0;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 80px;
-    text-align: center;
-
-    color: $color-black;
+    display: none;
   }
 
   &__photo {
@@ -53,10 +50,8 @@
 
 @media (min-width: 575px) {
   .about-us {
-    &__title {
-      margin: 84px 0 23px;
-      font-size: 30px;
-      line-height: 80px;
+    .section-title {
+      margin: 84px 0 23px 0;
     }
 
     &__photo {
@@ -84,15 +79,20 @@
 
 @media (min-width: 767px) {
   .about-us {
+    .section-title {
+      display: none;
+    }
     &__title {
+      display: block;
+      font-size: 30px;
+      line-height: 80px;
       margin: 52px 0 0 0;
       text-align: start;
     }
     &__inner {
       display: flex;
       flex-direction: row-reverse;
-      align-items: center;
-      // text-align: start;
+      align-items: flex-end;
     }
 
     &__img {
@@ -119,9 +119,8 @@
 @media (min-width: 992px) {
   .about-us {
     &__title {
-      margin: 106px 0 13px 0;
+      margin: 106px 0 0;
       font-size: 36px;
-      line-height: 80px;
     }
 
     &__text {
@@ -130,12 +129,10 @@
     }
 
     &__img {
-      margin-left: 78px;
+      width: 40%;
     }
-
-    &__img,
     &__service {
-      width: 50%;
+      width: 60%;
     }
 
     &__static-num {
@@ -151,8 +148,8 @@
 @media (min-width: 1087px) {
   .about-us {
     &__title {
-      margin: 282px 0 23px 0;
-      font-size: 36px;
+      margin: 282px 0 0;
+      font-size: 48px;
       line-height: 80px;
     }
 

@@ -1,6 +1,7 @@
 @import "vars";
 
 // HEADER---------------------
+
 .header {
   &__inner {
     position: relative;
@@ -10,7 +11,7 @@
     align-items: center;
   }
 
-  &__logo-link {
+  &__logo {
     padding-right: 30px;
     font-style: normal;
     font-weight: 400;
@@ -34,8 +35,9 @@
     text-align: start;
     background-color: lighten($color-accent, 30%);
     position: absolute;
+    z-index: 2;
 
-    display: none;
+    //  display: none;
   }
   &__item {
     text-decoration: none;
@@ -48,10 +50,10 @@
   &__link {
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 24px;
     text-decoration: none;
-    transition: all 0.3s;
+
     color: $color-dark-grey;
     transition: all 0.4s;
   }
@@ -67,10 +69,11 @@
 
   &__btn {
     position: absolute;
-    top: 90px;
+    top: 85px;
     right: 10px;
+    z-index: 3;
 
-    display: none;
+    //  display: none;
   }
 
   &__btn-link {
@@ -100,11 +103,7 @@
     &__inner {
       min-height: 123px;
     }
-    &__logo-link {
-      font-size: 30px;
-      line-height: 45px;
-    }
-
+    &__logo-link,
     &__logo-link-grey {
       font-size: 30px;
       line-height: 45px;
@@ -130,7 +129,7 @@
       flex: 1 1 auto;
     }
     &__menu {
-      padding: 0 90px 0 0;
+      padding: 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: flex-end;
@@ -148,6 +147,7 @@
     }
 
     &__btn {
+      margin-left: 90px;
       display: flex;
       position: static;
     }
@@ -166,10 +166,6 @@
     &__logo-link {
       font-size: 36px;
       line-height: 54px;
-    }
-
-    &__menu {
-      padding: 0 235px 0 0;
     }
 
     &__btn-link {
